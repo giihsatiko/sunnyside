@@ -1,0 +1,146 @@
+@media (max-width:700px){
+  .nav{
+    position: relative;
+    ul{
+      display: flex;
+      gap: 20px;
+      padding: 2% 0;
+      justify-content: center;
+      z-index: 1;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      margin: 0 3%;
+      border-radius:0 0 10px 10px;
+      flex-direction: column;
+      text-align: center;
+      overflow: hidden;
+      opacity: 0;
+      max-height: 0;
+      height: fit-content;
+      transition: all 1s ease-in-out;
+      &.active {
+        display: flex;
+        opacity: 1;
+        max-height: 170px;
+        background-color: white;
+      }
+    }
+    #burguer {
+      display: block;
+      padding: 50px;
+    }
+    li>ul {
+      position: absolute;
+      display: none;
+    }
+    ul {
+      li {
+        position: relative;
+        a {
+          color: #a3a1aa;
+         }
+      }
+    }
+    li:last-of-type a {
+      background: #fbd601;
+    }
+  }  
+
+  .inicio {
+    height: 320px;
+  }
+
+  .title {
+    top: 5%;
+  }
+
+  .item1 {
+    text-align: center;
+    grid-template-columns: 1fr;
+    img {
+      grid-row: 1;
+    }
+    div {
+      margin-top: 70px;
+      height: 400px;
+      h1{
+        width: 100%;
+      }
+      p{
+        width: fit-content;
+      }
+    }
+    div:first-of-type{
+      margin-left: 0;
+      padding: 0 2%;
+    }
+    span {
+      bottom: 0;
+      left: 2px;
+    }
+
+  }
+
+  .item2 {
+    grid-template-columns: 1fr;
+    text-align: center;
+    div {
+      margin-top: 70px;
+      height: 400px;
+      h1{
+        width: 100%;
+      }
+      p{
+        width: fit-content;
+      }
+    }
+    div:first-of-type {
+      margin-left: 0;
+      padding: 0 2%;
+    }
+    span {
+      bottom: 0;
+      left: 2px;
+    }
+    
+  }
+
+  .item3 {
+    grid-template-columns: 1fr;
+    .graphic {
+      padding-bottom: 60px;
+    }
+    .photography {
+      padding-bottom: 60px;
+    }
+  }
+
+  .client {
+    grid-template-columns: 1fr;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    .client-about {
+      flex-direction: column;
+      gap: 70px;
+    }
+  }
+
+  .images2 {
+    grid-template-columns: 1fr 1fr;
+    
+  }
+
+  .footer {
+    justify-content: flex-start;
+    svg {
+      width: 150px;
+      height: 30px;
+      padding-bottom: 5px;
+      margin-bottom: 50px;
+    }
+
+  }
+}
+
